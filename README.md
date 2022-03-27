@@ -235,5 +235,6 @@ npm start
 hugo serve
 
 # Publish
-hugo -d docs -b https://laluka.github.io/offenskill/
+hugo -d docs
+git add .; git commit -am "v0.3"; git push
 ```
