@@ -236,9 +236,11 @@ hugo serve
 
 # Publish
 git checkout main
+npm install postcss-cli
 /bin/rm -rf /tmp/site; ./hugo -d /tmp/site
 git checkout gh-pages
 /bin/rm -rf *; mv /tmp/site/* .
 git add .; git commit -am "v-$(date "+%m_%d_%Y_%s%N")"; 
 git push --set-upstream origin gh-pages; git push
+git checkout main
 ```
