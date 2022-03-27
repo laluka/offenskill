@@ -228,8 +228,12 @@ gopkg.in/yaml.v2="v2.4.0"
 # Setup
 
 ```bash
+# Dev
 npm install
-npm i -g postcss-cli
+npm install postcss-cli
 npm start
 hugo serve
+
+# Publish
+hugo -d docs -b https://laluka.github.io/offenskill/
 ```
