@@ -23,7 +23,7 @@ git commit -a -m "$1"
 git push
 
 # Publish the site
-pushd public
+pushd offenskill-public
 git add .
 git commit -a -m "$1"
 git push

@@ -58,7 +58,7 @@
   const darkStorage = localStorage.getItem('darkmode');
   const isBrowserDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-  if (!darkStorage && isBrowserDark) {
+  if (!darkStorage) {
     document.documentElement.classList.add('dark');
   }
 
