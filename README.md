@@ -235,6 +235,6 @@ npm start
 hugo serve
 
 # Publish
-./hugo -d docs
-git add .; git commit -am "v0.3"; git push
+rm -rf docs; ./hugo -d docs
+git add .; git commit -am "v0.4"; git push
 ```
